@@ -46,10 +46,19 @@ Problema 3: implementar una promesa que 3 segundos y medio  se complete exitosam
 consumir la promesa y mostrar el mensaje en un cuadro de mensaje
 */
 
-const temeOut = new Promise(resolve => {
+// const temeOut = new Promise(resolve => {
     
-    setTimeout(resolve('Promesa Completada'), 3500)
+//     setTimeout(resolve('Promesa Completada'), 3500)
+// });
+
+
+// temeOut.then(valor => alert(valor)).catch(err => console.error(err));
+
+const p = new Promise(resolve => {
+    const time = prompt('Tiempo en segundos');
+    time = number(time);
+    setTimeout(resolve('Hola Mundo'), time*1000)
 });
 
 
-temeOut.then(valor => alert(valor)).catch(err => console.error(err));
+p.then(valor => console.info(valor)).catch(err => console.error(err));
