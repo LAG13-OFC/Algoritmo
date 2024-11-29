@@ -2,33 +2,39 @@ let v = [2,4,6,1,9,10];
 
 let result = v.map(n => n*2);
 
+// 1) Hacer un programa que dado un vector de cadenas de caracteres con nombres de especies de animales, devuelva otro vector de elementos HTML <li> cuyo contenido sea cada uno de los elementos del primer vector
 console.log('-------1--------');
 console.log(result);
-
-
 result = v.map(n => n/3);
+
+// 2) Hacer un programa que dado un vector de números enteros, devuelva un vector conteniendo los números pares mayores o iguales que 20.
 console.log('--------2-------');
 console.log(result);
-
 let vstring = ['lucas', 'ariel', 'gonzalez', 'casa'];
-
 result = vstring.map(s => s.toUpperCase());
+
+// 3) Hacer un programa que dado un vector de cadenas de caracteres con nombres de personas, devuelva otro vector conteniendo los nombres de personas que tengan más de 5 letras, en letra mayúscula
 console.log('-------3--------');
 console.log(result);
-
 result = vstring.map(s => s.toLowerCase());
+
+// 4) Hacer un programa donde dado un vector de 3 objetos, que contengan las claves nombre, apellido y ciudad, devuelva la cantidad de personas que viven en Buenos Aires
 console.log('-------4--------');
 console.log(result);
 result = v.map(t => (t*1.8)+32);
+
+// 5) Hacer un programa que con el mismo vector del punto anterior, devuelva el promedio de las edades de las personas que viven en Merlo
 console.log('-------5--------');
 console.log(result);
 
 //* fILTRADO
 
+// 6) Hacer un programa que dado un vector de cadenas de caracteres, devuelva la última palabra que empiece con la letra "L"
 console.log('-------6--------');
-
 result = v.filter(v => v> 3.14);
 console.log(result);
+
+// 7) Desarrollar un programa que dado un vector de cadenas de caracteres, devuelva la última palabra que finalice con la palabra "ero"
 
 console.log('-------7--------');
 
